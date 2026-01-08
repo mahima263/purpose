@@ -261,10 +261,15 @@
 
         @media (max-width: 768px) {
             .hero-section {
-                background: url('ppm.jpeg');
-                padding: 6rem 0 3rem;
-                min-height: 70vh;
-            }
+    background: url('mobile-banner.jpeg') no-repeat center center/cover !important;
+    min-height: 80vh;
+    padding: 6rem 0 6rem;   /* upar-neeche spacing */
+    margin-top:60px;
+  
+    display: flex;
+    align-items: center;   /* vertical alignment */
+}
+
 
             .hero-content {
                 padding: 1.5rem;
@@ -317,14 +322,9 @@
             overflow: hidden;
         }
 
+        /* REMOVED THE HORIZONTAL LINE */
         .need-support-section::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            height: 4px;
-            background: linear-gradient(90deg, #b04b34, #e67e63);
+            content: none;
         }
 
         .section-title {
@@ -614,28 +614,28 @@
             font-weight: 500;
             text-align: center;
         }
+
         .support-highlight-box {
-    max-width: 1000px;
-    margin: 60px auto 0;
-    padding: 30px 40px;
-    background: #ffffff; /* very soft neutral */
-    border-left: 4px solid #B04B3B; /* IITK / donor accent */
-    border-radius: 6px;
-}
+            max-width: 1000px;
+            margin: 60px auto 0;
+            padding: 30px 40px;
+            background: #ffffff;
+            border-left: 4px solid #B04B3B;
+            border-radius: 6px;
+        }
 
-.support-closing-text {
-    margin: 0;
-    text-align: center;
-    font-size: 1.15rem;
-    line-height: 1.8;
-    color: #333;
-}
+        .support-closing-text {
+            margin: 0;
+            text-align: center;
+            font-size: 1.15rem;
+            line-height: 1.8;
+            color: #333;
+        }
 
-.support-closing-text strong {
-    color: #b04b34;
-    font-weight: 600;
-}
-
+        .support-closing-text strong {
+            color: #b04b34;
+            font-weight: 600;
+        }
 
         /* RESPONSIVE DESIGN FOR NEED FOR SUPPORT */
         @media (max-width: 1100px) {
@@ -1886,9 +1886,9 @@
             }
 
             .shared-impact-benefit-icon {
-    margin: 0 auto 15px auto;
-    display: block;
-}
+                margin: 0 auto 15px auto;
+                display: block;
+            }
 
 
             .shared-impact-highlight-section {
@@ -2131,8 +2131,8 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#stories">Stories</a>
                     </li>
-                    
-                  
+
+
                     <li class="nav-item">
                         <a class="nav-link nav-cta-btn" href="#contact">Talk to us</a>
                     </li>
@@ -2143,7 +2143,9 @@
 
     <!-- ========== RESPONSIVE HERO SECTION ========== -->
     <section class="hero-section">
-
+        <div class="container">
+            
+        </div>
     </section>
 
     <!-- ========== THE NEED FOR SUPPORT SECTION ========== -->
@@ -2242,7 +2244,7 @@
             <p class="support-closing-text">
                 These numbers reflect a simple truth: <strong>talent is universal, but opportunity is not.</strong>
                 A scholarship at IIT Kanpur is not just about financial aid.
-                It ensures that <strong>ability, not background, defines a student’s success.</strong>
+                It ensures that <strong>ability, not background, defines a student's success.</strong>
             </p>
         </div>
         
@@ -2252,9 +2254,9 @@
     <section id="purpose" class="purpose-section">
         <div class="container">
             <div class="row">
-                <div class="col-lg-10 mx-auto text-center mb-5">
+                <div class="col-lg-10 mx-auto text-center mb-5" data-aos="fade-up" data-aos-duration="800">
                     <h2 class="section-header">Purpose Driven Partnership</h2>
-                    <p class="pintro-text">
+                    <p class="pintro-text" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
                         IIT Kanpur offers one of India's most trusted and transparent frameworks for
                         scholarship support, making it an ideal CSR partner for organizations seeking measurable and
                         lasting educational impact.
@@ -2264,7 +2266,7 @@
 
             <div class="row">
                 <!-- LEFT CARD -->
-                <div class="col-lg-6 mb-4 d-flex">
+                <div class="col-lg-6 mb-4 d-flex" data-aos="fade-right" data-aos-duration="800" data-aos-delay="300">
                     <div class="purpose-card flex-column d-flex">
                         <h3 class="mb-4">
                             When your company supports the
@@ -2278,16 +2280,16 @@
                             financial uncertainty.
                         </p>
 
-                        <img src="1D6A1361.JPG" alt="Scholarship Support" class="purpose-img mt-auto">
+                        <img src="1D6A1361.JPG" alt="Scholarship Support" class="purpose-img mt-auto" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="400">
                     </div>
                 </div>
 
                 <!-- RIGHT CARD -->
-                <div class="col-lg-6 mb-4 d-flex">
+                <div class="col-lg-6 mb-4 d-flex" data-aos="fade-left" data-aos-duration="800" data-aos-delay="300">
                     <div class="purpose-card flex-column d-flex">
                         <h4 class="mb-4">Your partnership ensures:</h4>
 
-                        <div class="benefit-item">
+                        <div class="benefit-item" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
                             <div class="benefit-icon">✓</div>
                             <div>
                                 <h5>Direct-to-beneficiary impact</h5>
@@ -2295,7 +2297,7 @@
                             </div>
                         </div>
 
-                        <div class="benefit-item">
+                        <div class="benefit-item" data-aos="fade-up" data-aos-duration="800" data-aos-delay="500">
                             <div class="benefit-icon">✓</div>
                             <div>
                                 <h5>Full transparency and accountability</h5>
@@ -2303,7 +2305,7 @@
                             </div>
                         </div>
 
-                        <div class="benefit-item">
+                        <div class="benefit-item" data-aos="fade-up" data-aos-duration="800" data-aos-delay="600">
                             <div class="benefit-icon">✓</div>
                             <div>
                                 <h5>CSR compliance</h5>
@@ -2311,7 +2313,7 @@
                             </div>
                         </div>
 
-                        <div class="benefit-item">
+                        <div class="benefit-item" data-aos="fade-up" data-aos-duration="800" data-aos-delay="700">
                             <div class="benefit-icon">✓</div>
                             <div>
                                 <h5>Recognition</h5>
@@ -2320,7 +2322,7 @@
                             </div>
                         </div>
 
-                        <div class="p-4 rounded bg-light text-center mt-auto">
+                        <div class="p-4 rounded bg-light text-center mt-auto" data-aos="fade-up" data-aos-duration="800" data-aos-delay="800">
                             <h4 class="mb-0">
                                 At IIT Kanpur, every scholarship translates into impact that can be
                                 <span class="highlight">seen, measured, and celebrated.</span>
@@ -2332,11 +2334,11 @@
         </div>
     </section>
     <!-- ========== SHARED IMPACT SECTION ========== -->
-    <div class="shared-impact-container" id="shared-impact">
+    <div class="shared-impact-container" id="shared-impact" data-aos="fade-up" data-aos-duration="800">
         <!-- Header Section -->
         <div class="shared-impact-header">
-            <h1 class="shared-impact-main-title">Shared Impact</h1>
-            <p class="shared-impact-subtitle">
+            <h1 class="shared-impact-main-title" data-aos="zoom-in" data-aos-duration="800">Shared Impact</h1>
+            <p class="shared-impact-subtitle" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
                 A partnership with IIT Kanpur offers more than the satisfaction of giving.
                 It builds mutual value grounded in measurable results and shared purpose.
             </p>
@@ -2345,7 +2347,7 @@
         <!-- Content Section -->
         <div class="shared-impact-content-section">
             <!-- Image Column -->
-            <div class="shared-impact-image-column">
+            <div class="shared-impact-image-column" data-aos="fade-right" data-aos-duration="800" data-aos-delay="300">
                 <img src="1D6A1468.JPG" alt="IIT Kanpur Campus - Students collaborating in innovation lab"
                     class="shared-impact-main-image">
                 <div class="shared-impact-image-overlay">
@@ -2355,11 +2357,11 @@
             </div>
 
             <!-- Text Content Column -->
-            <div class="shared-impact-text-column">
+            <div class="shared-impact-text-column" data-aos="fade-left" data-aos-duration="800" data-aos-delay="300">
                 <h2 class="shared-impact-section-heading">When you partner with us</h2>
 
                 <div class="shared-impact-benefits-list">
-                    <div class="shared-impact-benefit-item">
+                    <div class="shared-impact-benefit-item" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
                         <div class="shared-impact-benefit-icon">🎯</div>
                         <div class="shared-impact-benefit-content">
                             <h4>Invest in India's future-ready talent through direct educational impact</h4>
@@ -2368,7 +2370,7 @@
                         </div>
                     </div>
 
-                    <div class="shared-impact-benefit-item">
+                    <div class="shared-impact-benefit-item" data-aos="fade-up" data-aos-duration="800" data-aos-delay="500">
                         <div class="shared-impact-benefit-icon">🏆</div>
                         <div class="shared-impact-benefit-content">
                             <h4>Build brand trust and visibility as a leader in equitable education</h4>
@@ -2377,7 +2379,7 @@
                         </div>
                     </div>
 
-                    <div class="shared-impact-benefit-item">
+                    <div class="shared-impact-benefit-item" data-aos="fade-up" data-aos-duration="800" data-aos-delay="600">
                         <div class="shared-impact-benefit-icon">📊</div>
                         <div class="shared-impact-benefit-content">
                             <h4>Report clear outcomes with transparent data and measurable social ROI</h4>
@@ -2390,7 +2392,7 @@
         </div>
 
         <!-- Light Highlight Section -->
-        <div class="shared-impact-highlight-section">
+        <div class="shared-impact-highlight-section" data-aos="fade-up" data-aos-duration="800" data-aos-delay="700">
             <div class="shared-impact-highlight-content">
                 <h3 class="shared-impact-highlight-title">Your CSR becomes more than compliance</h3>
                 <p class="shared-impact-highlight-text">
@@ -2401,7 +2403,7 @@
                     Together, we build bridges to brighter futures.
                 </p>
 
-                <a href="#contact" class="shared-impact-cta-button">
+                <a href="#contact" class="shared-impact-cta-button" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="800">
                     <span>Start Your Partnership Journey</span>
                 </a>
             </div>
@@ -2411,15 +2413,15 @@
     <section id="ways-to-support" class="ways-to-support-section">
         <div class="container">
             <div class="row">
-                <div class="col-lg-8 mx-auto text-center mb-5 ways-to-support-content">
+                <div class="col-lg-8 mx-auto text-center mb-5 ways-to-support-content" data-aos="fade-up" data-aos-duration="800">
                     <h2 class="section-header">Ways to Support</h2>
-                    <p class="lead">Choose how you want to make a difference in the lives of IIT Kanpur students</p>
+                    <p class="lead" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">Choose how you want to make a difference in the lives of IIT Kanpur students</p>
                 </div>
             </div>
     
             <div class="row g-4">
                 <!-- Card 1 -->
-                <div class="col-md-6 col-lg-3 d-flex">
+                <div class="col-md-6 col-lg-3 d-flex" data-aos="flip-left" data-aos-duration="800" data-aos-delay="300">
                     <div class="card-container-3d">
                         <div class="support-card-3d card-3d-1">
                             <!-- 3D Particles -->
@@ -2448,7 +2450,7 @@
                 </div>
     
                 <!-- Card 2 -->
-                <div class="col-md-6 col-lg-3 d-flex">
+                <div class="col-md-6 col-lg-3 d-flex" data-aos="flip-left" data-aos-duration="800" data-aos-delay="400">
                     <div class="card-container-3d">
                         <div class="support-card-3d card-3d-2">
                             <!-- 3D Particles -->
@@ -2477,7 +2479,7 @@
                 </div>
     
                 <!-- Card 3 -->
-                <div class="col-md-6 col-lg-3 d-flex">
+                <div class="col-md-6 col-lg-3 d-flex" data-aos="flip-left" data-aos-duration="800" data-aos-delay="500">
                     <div class="card-container-3d">
                         <div class="support-card-3d card-3d-3">
                             <!-- 3D Particles -->
@@ -2507,7 +2509,7 @@
                 </div>
     
                 <!-- Card 4 -->
-                <div class="col-md-6 col-lg-3 d-flex">
+                <div class="col-md-6 col-lg-3 d-flex" data-aos="flip-left" data-aos-duration="800" data-aos-delay="600">
                     <div class="card-container-3d">
                         <div class="support-card-3d card-3d-4">
                             <!-- 3D Particles -->
@@ -2540,24 +2542,20 @@
 
     <!-- ========== STORIES BEHIND THE NUMBERS SECTION ========== -->
 
-
-
     <!-- Testimonials Section -->
     <section id="testimonials" class="testimonials section">
 
-
         <!-- Section Title -->
-        <div id="stories" class="container" data-aos="fade-up">
-            <h2 class="fw-bold display-6 mt-4 mb-4 text-center">Stories of Change
-            </h2>
+        <div id="stories" class="container" data-aos="fade-up" data-aos-duration="800">
+            <h2 class="fw-bold display-6 mt-4 mb-4 text-center">Stories of Change</h2>
         </div><!-- End Section Title -->
 
-        <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="container" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
 
             <div class="swiper init-swiper">
                 <div class="swiper-wrapper">
 
-                    <div class="swiper-slide">
+                    <div class="swiper-slide" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
                         <div class="testimonial-item">
                             <p class="text-white">
                                 Aniket comes from a humble family where money was always
@@ -2576,7 +2574,7 @@
                         </div>
                     </div><!-- End testimonial item -->
 
-                    <div class="swiper-slide">
+                    <div class="swiper-slide" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
                         <div class="testimonial-item">
                             <p class="text-white">
                                 Sneh comes from a small village where her father drives an
@@ -2595,9 +2593,7 @@
                         </div>
                     </div><!-- End testimonial item -->
 
-
-
-                    <div class="swiper-slide">
+                    <div class="swiper-slide" data-aos="fade-up" data-aos-duration="800" data-aos-delay="500">
                         <div class="testimonial-item">
                             <p class="text-white">
                                 Vidhi grew up in a small city in Rajasthan, in a joint family where
@@ -2617,9 +2613,8 @@
                         </div>
                     </div><!-- End testimonial item -->
 
-
                     <!-- End testimonial item -->
-                    <div class="swiper-slide">
+                    <div class="swiper-slide" data-aos="fade-up" data-aos-duration="800" data-aos-delay="600">
                         <div class="testimonial-item">
                             <p class="text-white">
                                 Harsh's father, the primary breadwinner, worked long hours on the
@@ -2638,7 +2633,6 @@
                         </div>
                     </div>
 
-
                 </div>
                 <div class="swiper-pagination mb-4"></div>
             </div>
@@ -2651,14 +2645,14 @@
     <section id="get-started" class="get-started-section">
         <div class="container">
             <div class="row">
-                <div class="col-lg-8 mx-auto text-center mb-5">
+                <div class="col-lg-8 mx-auto text-center mb-5" data-aos="fade-up" data-aos-duration="800">
                     <h2 class="section-header">Get Started</h2>
-                    <p class="lead">Begin your partnership journey with IIT Kanpur in three simple steps</p>
+                    <p class="lead" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">Begin your partnership journey with IIT Kanpur in three simple steps</p>
                 </div>
             </div>
 
             <div class="row g-4">
-                <div class="col-md-4">
+                <div class="col-md-4" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
                     <div class="step-card">
                         <div class="step-number">1</div>
                         <h4>Connect with our CSR Desk</h4>
@@ -2666,7 +2660,7 @@
                             interests.</p>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
                     <div class="step-card">
                         <div class="step-number">2</div>
                         <h4>Select Your Focus Area</h4>
@@ -2674,7 +2668,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4" data-aos="fade-up" data-aos-duration="800" data-aos-delay="500">
                     <div class="step-card">
                         <div class="step-number">3</div>
                         <h4>Receive Measurable Results</h4>
@@ -2685,7 +2679,7 @@
             </div>
 
             <div class="row mt-5">
-                <div class="col-lg-10 mx-auto text-center">
+                <div class="col-lg-10 mx-auto text-center" data-aos="fade-up" data-aos-duration="800" data-aos-delay="600">
                     <h3 class="mb-4">Together, we can ensure that <span class="highlight">no deserving IIT Kanpur
                             student is held back by financial limitations.</span></h3>
                     
@@ -2697,35 +2691,30 @@
     <!-- ========== CONTACT SECTION ========== -->
     <section id="contact" class="contact-section">
         <div class="container">
-            
-
             <div class="row justify-content-center">
                 <div class="col-lg-8">
-                    
-                    <div class="contact-card text-center">
+                    <div class="contact-card text-center" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="300">
                         <div class="row">
-                            <div class="col-lg-8 mx-auto text-center mb-2">
+                            <div class="col-lg-8 mx-auto text-center mb-2" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
                                 <h2 class="section-header text-white">Contact Us</h2>
-                                
                             </div>
                         </div>
                         <div class="contact-icon">📞</div>
                         <h3 class="mb-3 text-white">Office of Corporate Relations</h3>
                         <p class="mb-4 text-white">Indian Institute of Technology Kanpur</p>
 
-
                         <div class="row">
-                            <div class="col-md-6 mb-4">
+                            <div class="col-md-6 mb-4" data-aos="fade-right" data-aos-duration="800" data-aos-delay="500">
                                 <h5 class="text-white">Email</h5>
                                 <p><a href="mailto:csr@iitk.ac.in" class="text-white">csr@iitk.ac.in</a></p>
                             </div>
-                            <div class="col-md-6 mb-4">
+                            <div class="col-md-6 mb-4" data-aos="fade-left" data-aos-duration="800" data-aos-delay="500">
                                 <h5 class="text-white">Phone</h5>
                                 <p><a href="tel:+91-9810898246" class="text-white">+91-9810898246</a></p>
                             </div>
                         </div>
 
-                        <a href="#" class="cta-button mt-3">Book a Call →</a>
+                        <a href="#" class="cta-button mt-3" data-aos="fade-up" data-aos-duration="800" data-aos-delay="600">Book a Call →</a>
                     </div>
                 </div>
             </div>
@@ -2733,7 +2722,7 @@
     </section>
 
     <!-- ========== FOOTER ========== -->
-    <footer class="footer">
+    <footer class="footer" data-aos="fade-up" data-aos-duration="800">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 mx-auto text-center">
@@ -2750,12 +2739,14 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-        // Initialize AOS
+        // Initialize AOS with enhanced settings
         AOS.init({
             duration: 800,
-            easing: 'ease-in-out',
+            easing: 'ease-in-out-cubic',
             once: true,
-            mirror: false
+            mirror: false,
+            offset: 100,
+            delay: 100
         });
 
         // Initialize Swiper
