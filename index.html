@@ -270,7 +270,33 @@
             overflow: hidden;
             /* border-left: 8px solid var(--primary-color); */
         }
+/* ========== VISION PARAGRAPH STYLES ========== */
+.vision-paragraph {
+    font-size: 1.3rem;
+    line-height: 1.7;
+    color: var(--text-dark);
+    margin-bottom: 1.5rem;
+    font-weight: 400;
+}
 
+
+
+/* दूसरा पैराग्राफ के लिए justify alignment */
+.vision-paragraph:not(.text-center) {
+    text-align: justify;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .vision-paragraph {
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+    
+    .vision-paragraph:not(.text-center) {
+        text-align: left;
+    }
+}
         .vision-goal {
             background: rgba(176, 75, 52, 0.1);
             padding: 30px;
@@ -2412,40 +2438,42 @@
     </section>
 
     <!-- ========== OUR VISION SECTION ========== -->
-    <section id="vision" class="vision-section">
-        <div class="container">
-            <div class="vision-card" data-aos="fade-up" data-aos-duration="800">
-                <h2 class="section-header">Our Vision</h2>
-                <p class="lead text-center" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
-                    IIT Kanpur envisions becoming the first IIT where no eligible student is denied support due to financial constraints.
-
-                </p>
-                <p data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
-                    As the cost of quality higher education continues to rise, the Institute is committed to ensuring that every deserving student who earns a seat at IIT Kanpur is able to complete their education with dignity and continuity.
-
-                </p>
-                
-                <div class="vision-goal" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
-                    Our goal is to enable 100 percent scholarship access for all eligible students.
+<section id="vision" class="vision-section">
+    <div class="container">
+        <div class="vision-card" data-aos="fade-up" data-aos-duration="800">
+            <h2 class="section-header">The Vision</h2>
+            
+            <!-- पहला पैराग्राफ - lead क्लास हटाई गई -->
+            <!-- <p class="text-center vision-paragraph" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
+                IIT Kanpur envisions becoming the first IIT where no eligible student is denied support due to financial constraints.
+            </p> -->
+            
+            <!-- दूसरा पैराग्राफ - vision-paragraph क्लास जोड़ी गई -->
+            <p class="vision-paragraph text-center" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
+                IIT Kanpur envisions becoming the first IIT where no eligible student is denied support due to financial constraints.
+                <br/>As the cost of quality higher education continues to rise, the Institute is committed to ensuring that every deserving student who earns a seat at IIT Kanpur is able to complete their education with dignity and continuity.
+            </p>
+            
+            <div class="vision-stats" data-aos="fade-up" data-aos-duration="800" data-aos-delay="500">
+                <div class="vision-stat-item">
+                    <div class="vision-stat-number">9,500+</div>
+                    <div class="vision-stat-label">Total students (all programs)</div>
                 </div>
-                
-                <div class="vision-stats" data-aos="fade-up" data-aos-duration="800" data-aos-delay="500">
-                    <div class="vision-stat-item">
-                        <div class="vision-stat-number">9,500+</div>
-                        <div class="vision-stat-label">Total students (all programs)</div>
-                    </div>
-                    <div class="vision-stat-item">
-                        <div class="vision-stat-number">5,084</div>
-                        <div class="vision-stat-label">Undergraduate students</div>
-                    </div>
-                    <div class="vision-stat-item">
-                        <div class="vision-stat-number">~4,400</div>
-                        <div class="vision-stat-label">Postgraduate & PhD students</div>
-                    </div>
+                <div class="vision-stat-item">
+                    <div class="vision-stat-number">5,084</div>
+                    <div class="vision-stat-label">Undergraduate students</div>
+                </div>
+                <div class="vision-stat-item">
+                    <div class="vision-stat-number">~4,400</div>
+                    <div class="vision-stat-label">Postgraduate & PhD students</div>
                 </div>
             </div>
+            <div class="vision-goal" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
+                Our goal is to enable 100% scholarship access for all eligible students.
+            </div>
         </div>
-    </section>
+    </div>
+</section>
 
     <!-- ========== STUDENT DEMOGRAPHICS SECTION ========== -->
     <section id="demographics" class="demographics-section">
@@ -2490,10 +2518,10 @@
     <section id="cost" class="cost-section">
         <div class="container">
             <div class="cost-header" data-aos="fade-up" data-aos-duration="800">
-                <h2 class="section-header">The Cost of Continuing at IIT Kanpur</h2>
-                <p class="cost-tagline">Average annual expenditure per undergraduate student is</p>
+                <h2 class="section-header">Average Annual Expenditure at IIT Kanpur</h2>
+                
                 <div class="cost-main-amount">₹3.35 Lakh</div>
-                <p class="cost-amount-label">Comprehensive coverage of tuition, living expenses, and academic requirements</p>
+                <p class="cost-amount-label">Comprehensive coverage of tuition, living expenses, and academic requirements of an undergraduate student</p>
             </div>
             
             <div class="cost-breakdown-container" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
@@ -2921,11 +2949,8 @@
                 <p class="priority-description">Equity, access, and excellence in higher education</p>
             </div>
             
-            <div class="priority-card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
-                <div class="priority-icon"><i class="fas fa-flag"></i></div>
-                <h3 class="priority-title">Atmanirbhar Bharat</h3>
-                <p class="priority-description">Building a skilled, innovation-driven workforce</p>
-            </div>
+            <div class="priority-card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300"> <div class="priority-icon"><i class="fas fa-flag"></i></div> <h3 class="priority-title">Atmanirbhar Bharat</h3> <p class="priority-description">Building a skilled, innovation-driven workforce</p> </div>
+            
             
             <div class="priority-card " data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
                 <div class="priority-icon"><i class="fas fa-laptop-code"></i></div>
