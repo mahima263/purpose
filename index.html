@@ -1216,487 +1216,456 @@
             }
         }
 
-        /* ========== WAYS TO SUPPORT SECTION - SIMPLER DESIGN ========== */
-        .ways-to-support-section {
-            padding: 100px 0;
-            background: #ffffff;
-            position: relative;
-            overflow: hidden;
-        }
 
-        .ways-to-support-content {
-            position: relative;
-            z-index: 1;
-        }
 
-        .support-card-container {
-            width: 100%;
-            height: 100%;
-            position: relative;
-        }
+/* ========== WAYS TO SUPPORT SECTION - SIMPLER DESIGN ========== */
+.ways-to-support-section {
+    padding: 100px 0;
+    background: #ffffff;
+    position: relative;
+    overflow: hidden;
+}
 
-        .support-card {
-            background: white;
-            border-radius: 20px;
-            padding: 40px 30px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-            transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-            height: 100%;
-            display: flex;
-            flex-direction: column;
-            position: relative;
-            overflow: hidden;
-            border: 1px solid rgba(176, 75, 52, 0.1);
-        }
+.ways-to-support-content {
+    position: relative;
+    z-index: 1;
+}
 
-        .support-card.has-amount {
-            min-height: 500px;
-        }
+.support-card-container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
 
-        .support-card:not(.has-amount) {
-            min-height: 520px;
-        }
+.support-card {
+    background: white;
+    border-radius: 20px;
+    padding: 40px 30px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid rgba(176, 75, 52, 0.1);
+}
 
-        .support-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 
-                0 25px 50px rgba(176, 75, 52, 0.15),
-                0 15px 30px rgba(0, 0, 0, 0.1);
-            border-color: rgba(176, 75, 52, 0.3);
-        }
+.support-card.has-amount {
+    min-height: 500px;
+}
 
-        .support-card::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 4px;
-            background: linear-gradient(90deg, var(--primary-color), var(--accent-gold));
-            transform: scaleX(0);
-            transform-origin: left;
-            transition: transform 0.5s ease;
-            z-index: 2;
-        }
+.support-card:not(.has-amount) {
+    min-height: 520px;
+}
 
-        .support-card:hover::before {
-            transform: scaleX(1);
-        }
+.support-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 
+        0 25px 50px rgba(176, 75, 52, 0.15),
+        0 15px 30px rgba(0, 0, 0, 0.1);
+    border-color: rgba(176, 75, 52, 0.3);
+}
 
-        .support-card::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            height: 4px;
-            background: linear-gradient(90deg, var(--accent-gold), var(--primary-color));
-            transform: scaleX(0);
-            transform-origin: right;
-            transition: transform 0.5s ease 0.1s;
-            z-index: 2;
-        }
+.support-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(90deg, var(--primary-color), var(--accent-gold));
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.5s ease;
+    z-index: 2;
+}
 
-        .support-card:hover::after {
-            transform: scaleX(1);
-        }
+.support-card:hover::before {
+    transform: scaleX(1);
+}
 
-        .card-icon {
-            width: 70px;
-            height: 70px;
-            background: rgba(176, 75, 52, 0.1);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin: 0 auto 25px;
-            color: var(--primary-color);
-            font-size: 2rem;
-            transition: all 0.4s ease;
-        }
+.support-card::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(90deg, var(--accent-gold), var(--primary-color));
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.5s ease 0.1s;
+    z-index: 2;
+}
 
-        .support-card:hover .card-icon {
-            background: var(--primary-color);
-            color: white;
-            transform: scale(1.1);
-            box-shadow: 0 10px 20px rgba(176, 75, 52, 0.2);
-        }
+.support-card:hover::after {
+    transform: scaleX(1);
+}
 
-        .support-card h3 {
-            font-size: 1.5rem;
-            color: var(--primary-color);
-            margin-bottom: 20px;
-            text-align: center;
-            font-weight: 700;
-            transition: all 0.3s ease;
-            line-height: 1.3;
-            min-height: 3.6em;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
+.card-icon {
+    width: 70px;
+    height: 70px;
+    background: rgba(176, 75, 52, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 25px;
+    color: var(--primary-color);
+    font-size: 2rem;
+    transition: all 0.4s ease;
+}
 
-        .support-card:hover h3 {
-            color: var(--primary-dark);
-        }
+.support-card:hover .card-icon {
+    background: var(--primary-color);
+    color: white;
+    transform: scale(1.1);
+    box-shadow: 0 10px 20px rgba(176, 75, 52, 0.2);
+}
 
-        .card-amount {
-            font-size: 2.2rem;
-            font-weight: 800;
-            color: var(--primary-color);
-            text-align: center;
-            margin-bottom: 5px;
-            transition: all 0.3s ease;
-            position: relative;
-            flex-shrink: 0;
-        }
+.support-card h3 {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    margin-bottom: 10px; /* reduced to accommodate subheading */
+    text-align: center;
+    font-weight: 700;
+    transition: all 0.3s ease;
+    line-height: 1.3;
+}
 
-        .support-card:hover .card-amount {
-            color: var(--accent-gold);
-        }
+.support-card:hover h3 {
+    color: var(--primary-dark);
+}
 
-        .card-amount::after {
-            content: '';
-            position: absolute;
-            bottom: -5px;
-            left: 50%;
-            transform: translateX(-50%) scaleX(0);
-            width: 60px;
-            height: 3px;
-            background: var(--accent-gold);
-            transition: transform 0.4s ease;
-        }
+/* New subheading style */
+.card-subheading {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #666;
+    text-align: center;
+    margin-bottom: 20px;
+    line-height: 1.4;
+    padding: 0 5px;
+}
 
-        .support-card:hover .card-amount::after {
-            transform: translateX(-50%) scaleX(1);
-        }
+.card-amount {
+    font-size: 2.2rem;
+    font-weight: 800;
+    color: var(--primary-color);
+    text-align: center;
+    margin-bottom: 5px;
+    transition: all 0.3s ease;
+    position: relative;
+    flex-shrink: 0;
+}
 
-        .card-subtitle {
-            font-size: 0.9rem;
-            color: var(--text-light);
-            text-align: center;
-            margin-bottom: 25px;
-            font-weight: 500;
-            flex-shrink: 0;
-        }
+.support-card:hover .card-amount {
+    color: var(--accent-gold);
+}
 
-        .card-content {
-            flex-grow: 1;
-            margin-bottom: 25px;
-            display: flex;
-            flex-direction: column;
-        }
+.card-amount::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%) scaleX(0);
+    width: 60px;
+    height: 3px;
+    background: var(--accent-gold);
+    transition: transform 0.4s ease;
+}
 
-        .card-content p {
-            color: var(--text-dark);
-            line-height: 1.6;
-            margin-bottom: 20px;
-            font-size: 1rem;
-            transition: color 0.3s ease;
-            flex-grow: 1;
-        }
+.support-card:hover .card-amount::after {
+    transform: translateX(-50%) scaleX(1);
+}
 
-        .support-card:hover .card-content p {
-            color: #444;
-        }
+.card-subtitle {
+    font-size: 0.9rem;
+    color: var(--text-light);
+    text-align: center;
+    margin-bottom: 25px;
+    font-weight: 500;
+    flex-shrink: 0;
+}
 
-        .feature-list {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-            flex-grow: 1;
-        }
+.card-content {
+    flex-grow: 1;
+    margin-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+}
 
-        .feature-list li {
-            display: flex;
-            align-items: flex-start;
-            gap: 12px;
-            margin-bottom: 15px;
-            color: var(--text-dark);
-            line-height: 1.5;
-            font-size: 0.95rem;
-            transition: all 0.3s ease;
-        }
+.card-content p {
+    color: var(--text-dark);
+    line-height: 1.6;
+    margin-bottom: 20px;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+    flex-grow: 1;
+}
 
-        .feature-list li:last-child {
-            margin-bottom: 0;
-        }
+.support-card:hover .card-content p {
+    color: #444;
+}
 
-        .feature-list li i {
-            color: var(--accent-gold);
-            font-size: 1rem;
-            margin-top: 3px;
-            flex-shrink: 0;
-            transition: transform 0.3s ease;
-        }
+.feature-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    flex-grow: 1;
+}
 
-        .support-card:hover .feature-list li i {
-            transform: scale(1.1);
-        }
+.feature-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    margin-bottom: 15px;
+    color: var(--text-dark);
+    line-height: 1.5;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+}
 
-        .card-footer {
-            margin-top: auto;
-            padding-top: 5px;
-            border-top: 1px solid rgba(176, 75, 52, 0.1);
-            text-align: center;
-            transition: border-color 0.3s ease;
-            flex-shrink: 0;
-        }
+.feature-list li:last-child {
+    margin-bottom: 0;
+}
 
-        .support-card:hover .card-footer {
-            border-top-color: rgba(176, 75, 52, 0.3);
-        }
+.feature-list li i {
+    color: var(--accent-gold);
+    font-size: 1rem;
+    margin-top: 3px;
+    flex-shrink: 0;
+    transition: transform 0.3s ease;
+}
 
-        .card-tag {
-            display: inline-block;
-            padding: 8px 20px;
-            background: rgba(176, 75, 52, 0.1);
-            color: var(--primary-color);
-            border-radius: 20px;
-            font-size: 0.85rem;
-            font-weight: 600;
-            transition: all 0.3s ease;
-        }
+.support-card:hover .feature-list li i {
+    transform: scale(1.1);
+}
 
-        .support-card:hover .card-tag {
-            background: var(--primary-color);
-            color: white;
-            transform: translateY(-2px);
-        }
+.card-footer {
+    margin-top: auto;
+    padding-top: 5px;
+    border-top: 1px solid rgba(176, 75, 52, 0.1);
+    text-align: center;
+    transition: border-color 0.3s ease;
+    flex-shrink: 0;
+}
 
-        @media (min-width: 1200px) {
-            .ways-to-support-section {
-                padding: 120px 0;
-            }
-            
-            .support-card {
-                padding: 50px 40px;
-            }
-            
-            .support-card.has-amount {
-                min-height: 520px;
-            }
-            
-            .support-card:not(.has-amount) {
-                min-height: 540px;
-            }
-            
-            .support-card h3 {
-                font-size: 1.6rem;
-                min-height: 3.8em;
-            }
-            
-            .card-amount {
-                font-size: 2.5rem;
-            }
-        }
+.support-card:hover .card-footer {
+    border-top-color: rgba(176, 75, 52, 0.3);
+}
 
-        @media (max-width: 1199px) and (min-width: 992px) {
-            .support-card {
-                padding: 35px 25px;
-            }
-            
-            .support-card.has-amount {
-                min-height: 480px;
-            }
-            
-            .support-card:not(.has-amount) {
-                min-height: 500px;
-            }
-            
-            .support-card h3 {
-                font-size: 1.4rem;
-                min-height: 4.2em;
-            }
-            
-            .card-amount {
-                font-size: 2rem;
-            }
-        }
+.card-tag {
+    display: inline-block;
+    padding: 8px 20px;
+    background: rgba(176, 75, 52, 0.1);
+    color: var(--primary-color);
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
 
-        @media (max-width: 991px) {
-            .ways-to-support-section {
-                padding: 80px 0;
-            }
-            
-            .support-card {
-                padding: 35px 25px;
-                max-width: 400px;
-                margin: 0 auto;
-            }
-            
-            .support-card.has-amount {
-                min-height: 460px;
-            }
-            
-            .support-card:not(.has-amount) {
-                min-height: 480px;
-            }
-            
-            .card-icon {
-                width: 65px;
-                height: 65px;
-                font-size: 1.8rem;
-            }
-            
-            .support-card:hover {
-                transform: translateY(-8px);
-            }
-            
-            .support-card h3 {
-                font-size: 1.4rem;
-                min-height: 4.2em;
-            }
-        }
+.support-card:hover .card-tag {
+    background: var(--primary-color);
+    color: white;
+    transform: translateY(-2px);
+}
 
-        @media (max-width: 767px) {
-            .ways-to-support-section {
-                padding: 70px 0;
-            }
-            
-            .support-card {
-                padding: 30px 20px;
-            }
-            
-            .support-card.has-amount {
-                min-height: 420px;
-            }
-            
-            .support-card:not(.has-amount) {
-                min-height: 440px;
-            }
-            
-            .support-card h3 {
-                font-size: 1.3rem;
-                min-height: 3.9em;
-            }
-            
-            .card-amount {
-                font-size: 1.8rem;
-            }
-            
-            .card-icon {
-                width: 60px;
-                height: 60px;
-                font-size: 1.6rem;
-                margin-bottom: 20px;
-            }
-            
-            .support-card:hover {
-                transform: translateY(-6px);
-            }
-            
-            .card-content p {
-                font-size: 0.95rem;
-            }
-            
-            .feature-list li {
-                font-size: 0.9rem;
-            }
-        }
+/* Responsive adjustments */
+@media (min-width: 1200px) {
+    .ways-to-support-section {
+        padding: 120px 0;
+    }
+    .support-card {
+        padding: 50px 40px;
+    }
+    .support-card.has-amount {
+        min-height: 520px;
+    }
+    .support-card:not(.has-amount) {
+        min-height: 540px;
+    }
+    .support-card h3 {
+        font-size: 1.6rem;
+    }
+    .card-amount {
+        font-size: 2.5rem;
+    }
+}
 
-        @media (max-width: 576px) {
-            .ways-to-support-section {
-                padding: 60px 0;
-            }
-            
-            .support-card {
-                padding: 25px 20px;
-                max-width: 350px;
-                margin: 0 auto;
-            }
-            
-            .support-card.has-amount {
-                min-height: 380px;
-            }
-            
-            .support-card:not(.has-amount) {
-                min-height: 400px;
-            }
-            
-            .support-card h3 {
-                font-size: 1.2rem;
-                margin-bottom: 15px;
-                min-height: 4.8em;
-            }
-            
-            .card-amount {
-                font-size: 1.6rem;
-            }
-            
-            .card-subtitle {
-                font-size: 0.85rem;
-                margin-bottom: 20px;
-            }
-            
-            .card-icon {
-                width: 55px;
-                height: 55px;
-                font-size: 1.4rem;
-                margin-bottom: 15px;
-            }
-            
-            .card-content p {
-                font-size: 0.9rem;
-                line-height: 1.5;
-            }
-            
-            .feature-list li {
-                font-size: 0.85rem;
-                margin-bottom: 12px;
-            }
-            
-            .card-tag {
-                padding: 6px 15px;
-                font-size: 0.8rem;
-            }
-            
-            .support-card:hover {
-                transform: translateY(-5px);
-            }
-            
-            .support-card:hover::before,
-            .support-card:hover::after {
-                transform: scaleX(0.8);
-            }
-        }
+@media (max-width: 1199px) and (min-width: 992px) {
+    .support-card {
+        padding: 35px 25px;
+    }
+    .support-card.has-amount {
+        min-height: 480px;
+    }
+    .support-card:not(.has-amount) {
+        min-height: 500px;
+    }
+    .support-card h3 {
+        font-size: 1.4rem;
+    }
+    .card-amount {
+        font-size: 2rem;
+    }
+}
 
-        @media (max-width: 375px) {
-            .support-card {
-                padding: 20px 15px;
-            }
-            
-            .support-card.has-amount {
-                min-height: 360px;
-            }
-            
-            .support-card:not(.has-amount) {
-                min-height: 380px;
-            }
-            
-            .support-card h3 {
-                font-size: 1.1rem;
-                min-height: 5.5em;
-            }
-            
-            .card-amount {
-                font-size: 1.4rem;
-            }
-            
-            .card-icon {
-                width: 50px;
-                height: 50px;
-                font-size: 1.2rem;
-            }
-            
-            .card-content p {
-                font-size: 0.85rem;
-            }
-            
-            .feature-list li {
-                font-size: 0.8rem;
-            }
-        }
+@media (max-width: 991px) {
+    .ways-to-support-section {
+        padding: 80px 0;
+    }
+    .support-card {
+        padding: 35px 25px;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+    .support-card.has-amount {
+        min-height: 460px;
+    }
+    .support-card:not(.has-amount) {
+        min-height: 480px;
+    }
+    .card-icon {
+        width: 65px;
+        height: 65px;
+        font-size: 1.8rem;
+    }
+    .support-card:hover {
+        transform: translateY(-8px);
+    }
+    .support-card h3 {
+        font-size: 1.4rem;
+    }
+}
+
+@media (max-width: 767px) {
+    .ways-to-support-section {
+        padding: 70px 0;
+    }
+    .support-card {
+        padding: 30px 20px;
+    }
+    .support-card.has-amount {
+        min-height: 420px;
+    }
+    .support-card:not(.has-amount) {
+        min-height: 440px;
+    }
+    .support-card h3 {
+        font-size: 1.3rem;
+    }
+    .card-amount {
+        font-size: 1.8rem;
+    }
+    .card-icon {
+        width: 60px;
+        height: 60px;
+        font-size: 1.6rem;
+        margin-bottom: 20px;
+    }
+    .support-card:hover {
+        transform: translateY(-6px);
+    }
+    .card-content p {
+        font-size: 0.95rem;
+    }
+    .feature-list li {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .ways-to-support-section {
+        padding: 60px 0;
+    }
+    .support-card {
+        padding: 25px 20px;
+        max-width: 350px;
+        margin: 0 auto;
+    }
+    .support-card.has-amount {
+        min-height: 380px;
+    }
+    .support-card:not(.has-amount) {
+        min-height: 400px;
+    }
+    .support-card h3 {
+        font-size: 1.2rem;
+        margin-bottom: 8px;
+    }
+    .card-subheading {
+        font-size: 0.95rem;
+        margin-bottom: 15px;
+    }
+    .card-amount {
+        font-size: 1.6rem;
+    }
+    .card-subtitle {
+        font-size: 0.85rem;
+        margin-bottom: 20px;
+    }
+    .card-icon {
+        width: 55px;
+        height: 55px;
+        font-size: 1.4rem;
+        margin-bottom: 15px;
+    }
+    .card-content p {
+        font-size: 0.9rem;
+        line-height: 1.5;
+    }
+    .feature-list li {
+        font-size: 0.85rem;
+        margin-bottom: 12px;
+    }
+    .card-tag {
+        padding: 6px 15px;
+        font-size: 0.8rem;
+    }
+    .support-card:hover {
+        transform: translateY(-5px);
+    }
+    .support-card:hover::before,
+    .support-card:hover::after {
+        transform: scaleX(0.8);
+    }
+}
+
+@media (max-width: 375px) {
+    .support-card {
+        padding: 20px 15px;
+    }
+    .support-card.has-amount {
+        min-height: 360px;
+    }
+    .support-card:not(.has-amount) {
+        min-height: 380px;
+    }
+    .support-card h3 {
+        font-size: 1.1rem;
+    }
+    .card-subheading {
+        font-size: 0.9rem;
+    }
+    .card-amount {
+        font-size: 1.4rem;
+    }
+    .card-icon {
+        width: 50px;
+        height: 50px;
+        font-size: 1.2rem;
+    }
+    .card-content p {
+        font-size: 0.85rem;
+    }
+    .feature-list li {
+        font-size: 0.8rem;
+    }
+}
+
 
         /* ========== IMPACT SECTION ========== */
         .impact-section {
@@ -3569,14 +3538,16 @@
                             <div class="card-icon">
                                 <i class="fa-solid fa-graduation-cap"></i>
                             </div>
-                            <h3>Comprehensive Student Support</h3>
+                            <h3>Shiksha Saarthi</h3>
+                            <h4 class="card-subheading">Complete Financial Support Scholarship</h4>
                             <div class="card-amount">₹3.35 lakh</div>
                             <p class="card-subtitle">per student per year</p>
                             <div class="card-content">
-                                <p>Covers the full annual cost of education, including tuition, housing, and essential academic and living expenses.</p>
+                                <p>
+                                    Covers the full annual cost of education, including tuition, housing, and essential academic and living expenses.
+                                </p>
                             </div>
-                            <div class="card-footer">
-                            </div>
+                            <div class="card-footer"></div>
                         </div>
                     </div>
                 </div>
@@ -3588,14 +3559,14 @@
                             <div class="card-icon">
                                 <i class="fa-solid fa-file-invoice-dollar"></i>
                             </div>
-                            <h3>Full Tuition Support</h3>
+                            <h3>Vidya Samarth</h3>
+                            <h4 class="card-subheading">Full Tuition Support Scholarship</h4>
                             <div class="card-amount">₹2 lakh</div>
                             <p class="card-subtitle">per student per year</p>
                             <div class="card-content">
                                 <p>Offsets a substantial portion of tuition fees, reducing reliance on education loans and enabling continuity.</p>
                             </div>
-                            <div class="card-footer">
-                            </div>
+                            <div class="card-footer"></div>
                         </div>
                     </div>
                 </div>
@@ -3608,8 +3579,8 @@
                                 <i class="fa-solid fa-infinity"></i>
                             </div>
                             <h3>Endowed Support for Long-Term Impact</h3>
+                            <h4 class="card-subheading">A corpus-based model designed for perpetual student support.</h4>
                             <div class="card-content">
-                                <p>A corpus-based model designed for perpetual student support.</p>
                                 <ul class="feature-list">
                                     <li>
                                         <i class="fas fa-check-circle"></i>
@@ -3625,14 +3596,14 @@
                                     </li>
                                 </ul>
                             </div>
-                            <div class="card-footer">
-                            </div>
+                            <div class="card-footer"></div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+    
 
     <!-- ========== IMPACT SECTION ========== -->
     <section id="impact" class="impact-section bg-light">
