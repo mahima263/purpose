@@ -215,12 +215,17 @@
 @media (max-width: 1366px) {
   .hero-section {
     height: auto;
-    min-height: calc(100vh - 50px);
-    padding: 4rem 0 2rem;
+    min-height: unset;
+    padding: 0;
+
+    /* ratio box trick */
+    aspect-ratio: 1920 / 900;   /* apne banner ka real ratio */
+
     background-size: cover;
-    background-position: center 20%; /* try 10%–30% */
+    background-position: center;
   }
 }
+
 
 
 
