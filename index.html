@@ -149,6 +149,7 @@
 
         /* ========== HERO SECTION ========== */
   /* ========== HERO SECTION ========== */
+/* ========== HERO SECTION ========== */
 .hero-section {
     background: url('ppd.jpeg') no-repeat center center;
     background-size: cover;
@@ -160,8 +161,6 @@
     display: flex;
     align-items: center;
 }
-
-
 
 .hero-title {
     font-size: 3.5rem;
@@ -211,24 +210,18 @@
     color: white;
 }
 
-/* ===== FIX FOR IDEAPAD SLIM 3 AND SIMILAR LAPTOPS (width 1201px to 1366px, landscape) ===== */
-@media (max-width: 1366px) {
-  .hero-section {
-    height: auto;
-    min-height: unset;
-    padding: 0;
-
-    /* ratio box trick */
-    aspect-ratio: 1920 / 1000;   /* apne banner ka real ratio */
-
-    background-size: cover;
-    background-position: center;
-  }
+/* ===== FIX FOR IDEAPAD SLIM 3 AND SIMILAR LAPTOPS (769px – 1366px) ===== */
+/* This rule now ONLY affects screens wider than 768px (i.e., laptops/tablets) */
+@media (min-width: 769px) and (max-width: 1366px) {
+    .hero-section {
+        height: auto;
+        min-height: unset;
+        padding: 0;
+        aspect-ratio: 1920 / 1000;   /* Use your banner’s actual ratio */
+        background-size: cover;
+        background-position: center;
+    }
 }
-
-
-
-
 
 @media (max-width: 992px) {
     .hero-title {
@@ -242,11 +235,15 @@
     }
 }
 
+/* ===== MOBILE STYLES (unchanged, work perfectly) ===== */
 @media (max-width: 768px) {
     .hero-section {
         padding: 5rem 0 3rem;
         min-height: 80vh;
         background: url('mobile-banner.jpeg') no-repeat center center/cover !important;
+        /* Remove any aspect-ratio that might have leaked in */
+        aspect-ratio: auto;
+        height: auto;
     }
     .hero-subtitle {
         font-size: 1.2rem;
@@ -260,8 +257,7 @@
         max-width: 300px;
         justify-content: center;
     }
-}
-        /* ========== OUR VISION SECTION hxjsxjsjx ========== */
+}  /* ========== OUR VISION SECTION hxjsxjsjx ========== */
         .vision-section {
             padding: 100px 0;
             background: var(--light-bg);
