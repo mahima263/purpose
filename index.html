@@ -148,114 +148,128 @@
         }
 
         /* ========== HERO SECTION ========== */
-        .hero-section {
-            background: url('ppd.jpeg') no-repeat center center;
-            background-size: cover;
-            color: white;
-            padding: 8rem 0 4rem;
-            position: relative;
-            overflow: hidden;
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-        }
+       /* ========== HERO SECTION ========== */
+.hero-section {
+    background: url('ppd.jpeg') no-repeat center center;
+    background-size: cover;
+    color: white;
+    padding: 8rem 0 4rem;
+    position: relative;
+    overflow: hidden;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
 
-        .hero-content {
-            max-width: 800px;
-            text-align: center;
-            margin: 0 auto;
-            padding: 3rem;
-            background-color: rgba(0, 0, 0, 0.5);
-            border-radius: 20px;
-            backdrop-filter: blur(10px);
-        }
+.hero-content {
+    max-width: 800px;
+    text-align: center;
+    margin: 0 auto;
+    padding: 3rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+}
 
-        .hero-title {
-            font-size: 3.5rem;
-            font-weight: 800;
-            margin-bottom: 1.5rem;
-            line-height: 1.2;
-            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
-        }
+.hero-title {
+    font-size: 3.5rem;
+    font-weight: 800;
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+}
 
-        .hero-subtitle {
-            font-size: 1.8rem;
-            margin-bottom: 2.5rem;
-            font-weight: 300;
-            opacity: 0.9;
-            font-style: italic;
-        }
+.hero-subtitle {
+    font-size: 1.8rem;
+    margin-bottom: 2.5rem;
+    font-weight: 300;
+    opacity: 0.9;
+    font-style: italic;
+}
 
-        .hero-buttons {
-            display: flex;
-            gap: 20px;
-            justify-content: center;
-            flex-wrap: wrap;
-        }
+.hero-buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
 
-        .hero-cta-button {
-            padding: 15px 35px;
-            font-size: 1.1rem;
-            font-weight: 600;
-            border-radius: 30px;
-            text-decoration: none;
-            transition: var(--transition);
-            display: inline-flex;
-            align-items: center;
-            gap: 10px;
-        }
+.hero-cta-button {
+    padding: 15px 35px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: var(--transition);
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+}
 
-        .hero-cta-primary {
-            background: var(--primary-color);
-            color: white;
-            border: none;
-        }
+.hero-cta-primary {
+    background: var(--primary-color);
+    color: white;
+    border: none;
+}
 
-        .hero-cta-primary:hover {
-            background: var(--primary-dark);
-            transform: translateY(-3px);
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
-            color: white;
-        }
+.hero-cta-primary:hover {
+    background: var(--primary-dark);
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    color: white;
+}
 
-        @media (max-width: 992px) {
-            .hero-title {
-                font-size: 2.8rem;
-            }
-            .hero-subtitle {
-                font-size: 1.5rem;
-            }
-            .hero-content {
-                padding: 2rem;
-            }
-        }
+/* ===== FIX FOR IDEAPAD SLIM 3 AND SIMILAR LAPTOPS (769px - 1200px) ===== */
+@media (min-width: 769px) and (max-width: 1200px) {
+    .hero-section {
+        background-position: top center;  /* Show top part of the image */
+        min-height: 90vh;                  /* Reduce height to fit content better */
+    }
+    .hero-content {
+        padding: 2.5rem;
+        max-width: 700px;
+    }
+    .hero-title {
+        font-size: 3rem;
+    }
+    .hero-subtitle {
+        font-size: 1.6rem;
+    }
+}
 
-        @media (max-width: 768px) {
-            .hero-section {
-                padding: 6rem 0 3rem;
-                min-height: 80vh;
-            }
-            .hero-section {
-                padding: 5rem 0 3rem;
-                height: 80vh;
-                margin-top: 0;
-                background: url('mobile-banner.jpeg') no-repeat center center/cover !important;
-            }
-            .hero-subtitle {
-                font-size: 1.2rem;
-            }
-            .hero-buttons {
-                flex-direction: column;
-                align-items: center;
-            }
-            .hero-cta-button {
-                width: 100%;
-                max-width: 300px;
-                justify-content: center;
-            }
-        }
+@media (max-width: 992px) {
+    .hero-title {
+        font-size: 2.8rem;
+    }
+    .hero-subtitle {
+        font-size: 1.5rem;
+    }
+    .hero-content {
+        padding: 2rem;
+    }
+}
 
-        /* ========== OUR VISION SECTION ========== */
+@media (max-width: 768px) {
+    .hero-section {
+        padding: 5rem 0 3rem;
+        min-height: 80vh;
+        background: url('mobile-banner.jpeg') no-repeat center center/cover !important;
+    }
+    .hero-subtitle {
+        font-size: 1.2rem;
+    }
+    .hero-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    .hero-cta-button {
+        width: 100%;
+        max-width: 300px;
+        justify-content: center;
+    }
+}
+
+        /* ========== OUR VISION SECTION hxjsxjsjx ========== */
         .vision-section {
             padding: 100px 0;
             background: var(--light-bg);
