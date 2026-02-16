@@ -216,12 +216,13 @@
   .hero-section {
     height: auto;
     min-height: unset;
-    aspect-ratio: 1920 / 900;
+    padding: 0;
+
+    /* ratio box trick */
+    aspect-ratio: 1920 / 1000;   /* apne banner ka real ratio */
 
     background-size: cover;
     background-position: center;
-
-    margin: 20px 0;   /* adjust 16–32px as needed */
   }
 }
 
